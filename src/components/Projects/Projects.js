@@ -2,11 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import Budget from "../../Assets/Projects/Budget-tracker.jpg"
-import Freetube from "../../Assets/Projects/Freetube.jpg"
-import Musify from "../../Assets/Projects/Musify.jpg"
-import Shoeshop from "../../Assets/Projects/Shoeshop.jpg"
-import ImageGallery from "../../Assets/Projects/Image-Gallery.jpg"
+import Budget from "../../Assets/Projects/Budget-tracker.jpg";
+import Freetube from "../../Assets/Projects/Freetube.jpg";
+import Musify from "../../Assets/Projects/Musify.jpg";
+import Shoeshop from "../../Assets/Projects/Shoeshop.jpg";
+import ImageGallery from "../../Assets/Projects/Image-Gallery.jpg";
+import TalkAtive from "../../Assets/Projects/TalkAtive.jpg";
 
 function Projects() {
   return (
@@ -20,6 +21,18 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TalkAtive}
+              isBlog={false}
+              title="TalkAtive"
+              description="Talkative is a real-time chat application that enables seamless one-on-one conversations with instant messaging. It includes an online/offline status indicator to show a user's presence in real-time. Users can update their profiles and customize the theme to enhance their chatting experience. The app leverages Socket.io for real-time communication and MongoDB for efficient data storage. The platform is secure and scalable, supporting multiple users simultaneously."
+              ghLink="https://github.com/Adarsh9Mishra/TalkAtive"
+              demoLink="https://talkative-b171.onrender.com/"
+            />
+          </Col>
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={ImageGallery}
